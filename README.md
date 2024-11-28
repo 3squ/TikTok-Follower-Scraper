@@ -26,28 +26,57 @@ A Python-based project that automates the extraction of follower counts from Tik
 4. Python Dependencies: Install the required libraries using the command:
    pip install -r requirements.txt
 
-### Download Files
-You can download all the necessary files as a zip package from this link:
-https://drive.google.com/file/d/1HqVkZUtbTZREffDPnO6F0skJbO4DxiQj/view?usp=sharing
 ---
 
-## Usage
+## Download Files
 
-### 1. Run the Scraping Script
-1. Add TikTok usernames to Follower.txt in the format:
-   Username: example_username1
-   Username: example_username2
-2. Run the scraping script using the provided batch file:
-   run_follower_bot.bat
-3. Check the results in TikTok_Followers.xlsx.
+To download all the necessary files in a ZIP format, click the link below:
 
-### 2. Open TikTok Profiles
-1. Run the open_tiktok_profiles.py script using the batch file:
-   run_open_tiktok_profiles.bat
-2. Follow the prompts to:
-   - Specify a follower count range.
-   - Set a delay between browser openings.
-3. The script will open TikTok profiles filtered by your criteria.
+[DOWNLOAD](https://drive.google.com/file/d/1HqVkZUtbTZREffDPnO6F0skJbO4DxiQj/view?usp=sharing)
+
+---
+
+## How to Get Follower Data from TikTok
+
+1. Open TikTok on your web browser.
+2. Log in to the desired account.
+3. Go to **Settings**.
+4. Under **Privacy**, click **Data**.
+5. Select **Download your data** or **Get a copy of your TikTok data**.
+6. Choose **Custom** and select **Profile and Posts**.
+7. Select the file format as **TXT**.
+8. Download the ZIP file containing the profile data.
+9. Extract the ZIP file and locate the **Follower.txt** file.
+10. Drag and replace **Follower.txt** into the same folder where all the code files are located.
+
+Done! Your follower data is now ready to be used with this project.
+
+---
+
+## How to Use the Code
+
+### Step 1: Download Python
+1. Go to https://www.python.org/downloads/ and download the latest version of Python.
+2. During installation, make sure to check the box that says "Add Python to PATH."
+
+### Step 2: Install the Required Libraries
+1. Open the folder where the project files are located.
+2. Hold down the Shift key, right-click inside the folder, and select **Open PowerShell window here** or **Open Terminal here**.
+3. Type the following command and press Enter:
+   pip install -r requirements.txt
+4. Wait for the installation to complete.
+
+### Step 3: Run the Scraping Script
+1. Double-click on the file **run_follower_bot.bat** to start the scraping process.
+2. The script will read TikTok usernames from the **Follower.txt** file and fetch their follower counts.
+3. The results will be saved in **TikTok_Followers.xlsx**.
+
+### Step 4: Open TikTok Profiles
+1. Double-click on the file **run_open_tiktok_profiles.bat**.
+2. Follow the on-screen prompts to:
+   - Enter the minimum and maximum follower counts for filtering.
+   - Specify the delay (in seconds) between opening profiles.
+3. The script will open TikTok profiles in your default web browser.
 
 ---
 
