@@ -9,6 +9,7 @@ A Python-based project that automates the extraction of follower counts from Tik
 - Automated Scraping: Uses Selenium WebDriver to scrape follower counts from TikTok profiles.
 - Data Export: Stores data in an Excel file (TikTok_Followers.xlsx) and appends new entries without overwriting existing records.
 - Backup System: Automatically creates timestamped backups of the Excel file during each run.
+- Skips Previously Checked Users: Automatically skips usernames that have already been processed in the past, saving time and avoiding duplication.
 - User Interaction:
   - Filter profiles by follower count ranges.
   - Open TikTok profiles in your default browser with a customizable delay.
@@ -70,6 +71,12 @@ Done! Your follower data is now ready to be used with this project.
 1. Double-click on the file **run_follower_bot.bat** to start the scraping process.
 2. The script will read TikTok usernames from the **Follower.txt** file and fetch their follower counts.
 3. The results will be saved in **TikTok_Followers.xlsx**.
+4. It skips usernames that have already been checked in the past. This is useful if:
+   - You have a large number of followers.
+   - You export follower data multiple times (e.g., after gaining new followers).
+   The script will only check new usernames, saving time and effort.
+5. The script processes approximately **0.8 seconds per user**, so it is recommended to run it overnight if you have many followers.
+6. If you need to stop the script, press **Control + C**. The program will save progress to the file before closing. The next time you run the script, it will resume from where it left off.
 
 ### Step 4: Open TikTok Profiles
 1. Double-click on the file **run_open_tiktok_profiles.bat**.
@@ -86,7 +93,7 @@ TikTok-Follower-Scraper/
 ├── follower_bot.py                # Main scraping script
 ├── open_tiktok_profiles.py        # Profile opening script
 ├── run_follower_bot.bat           # Batch file to run the scraper
-├── run_open_tiktok_profiles.bat   # Batch file to open profiler
+├── run_open_tiktok_profiles.bat   # Batch file to open profiles
 ├── Follower.txt                   # Input file for usernames
 ├── TikTok_Followers.xlsx          # Output file for results
 ├── requirements.txt               # Python dependencies
@@ -101,6 +108,7 @@ TikTok-Follower-Scraper/
 2. Run Scraping:
    Execute the scraping script using run_follower_bot.bat.
    The results will be saved to TikTok_Followers.xlsx.
+   Skips previously checked usernames automatically.
 
 3. Open Profiles:
    Execute run_open_tiktok_profiles.bat to filter and open profiles in your browser.
