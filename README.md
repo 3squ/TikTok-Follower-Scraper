@@ -86,7 +86,7 @@ TikTok-Follower-Scraper/
 ├── follower_bot.py                # Main scraping script
 ├── open_tiktok_profiles.py        # Profile opening script
 ├── run_follower_bot.bat           # Batch file to run the scraper
-├── run_open_tiktok_profiles.bat   # Batch file to open profiles
+├── run_open_tiktok_profiles.bat   # Batch file to open profiler
 ├── Follower.txt                   # Input file for usernames
 ├── TikTok_Followers.xlsx          # Output file for results
 ├── requirements.txt               # Python dependencies
