@@ -26,6 +26,10 @@ A Python-based project that automates the extraction of follower counts from Tik
 4. Python Dependencies: Install the required libraries using the command:
    pip install -r requirements.txt
 
+### Download Files
+You can download all the necessary files as a zip package from this link:
+https://drive.google.com/file/d/1yGWYvPPmMPs7Ktk0k8ZetfCs6OGu2Jqx/view?usp=sharing
+
 ---
 
 ## Usage
