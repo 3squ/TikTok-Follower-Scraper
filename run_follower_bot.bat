@@ -3,9 +3,6 @@
 echo Running follower_bot.py...
 echo.
 
-:: Navigate to the folder containing the script and input file
-cd "C:\Users\becke\OneDrive\Desktop\FOLLOWER BOT"
-
 :: Execute the Python script
 python follower_bot.py
 
